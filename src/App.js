@@ -18,7 +18,7 @@ function App() {
               <h1>Sanna Luostarinen</h1>
               <div className='boxButtons'>
                 <div className='box'>_</div>
-                <div className='box'>o</div>
+                <div className='box'>□</div>
                 <div className='box'>x</div>
               </div>
             </div>

@@ -8,47 +8,12 @@ html, body {
   font-family: Arial, sans-serif;
 }
 
-
-/*navigation*/
-header {
+main {
   display: flex;
   justify-content: center;
-  
 }
 
-header #navContainer {
-  width: 70%;
-  background-color: #fff9f3ff;
-  margin: 1rem;
-}
-
-header h1 {
-  font-size: 100%;
-  background-color: #79408fff;
-  color: #e3d8feff;
-  padding: 0.5rem;
-  margin: 0;
-}
-
-header nav {
-  display: flex;
-  justify-content: space-around;
-  padding: 1rem;
-}
-
-header nav a {
-  background-color: #e3d8feff;
-  color: #79408fff;
-  padding: 1rem 2rem;
-  text-decoration: none;
-
-
-}
-
-header nav a:active { 
-  color: black;
-}
-
+/*general*/
 .box {
   border-top: 3px solid #ffffff;
   border-right: 3px solid #d5d5d5;
@@ -77,6 +42,51 @@ header nav a:active {
   text-align: center;
   margin: 0 0.3rem;
   font-size: 80%;
+  cursor: pointer;
+}
+
+.cornerRightButton {
+  align-self: flex-end;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+
+/*navigation*/
+header {
+  display: flex;
+  justify-content: center;
+  
+}
+
+header #navContainer {
+  width: 70%;
+  background-color: #fff9f3ff;
+  margin: 1rem;
+}
+
+header h1 {
+  font-size: 100%;
+  color: #e3d8feff;
+  padding: 0.5rem;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+header nav a {
+  background-color: #e3d8feff;
+  color: #79408fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+
+header nav a:active { 
+  color: black;
 }
 
 #navContainer .boxHeader {
@@ -86,4 +96,48 @@ header nav a:active {
 #navContainer .boxButtons .box{
   background-color: #fff9f3ff;
  
+}
+
+/* about */
+
+#aboutContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#aboutBox {
+  width: 60%;
+  background-color: #e3d8feff;
+  background-color: #e3d8feff;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#aboutContainer h2 {
+  font-size: 100%;
+  color: #e3d8feff;
+  padding: 0.5rem;
+  margin: 0;
+}
+
+#aboutContainer .boxHeader {
+  background-color: #79408fff;
+  color: #e3d8feff;
+
+}
+
+#aboutContainer .boxHeader .boxButtons .box {
+  background-color: #fff9f3ff;
+  color: #79408fff;
+}
+
+#aboutContainer #aboutBox p {
+  margin: 1rem;
+}
+
+#aboutBox .cornerRightButton {
+  background-color: #e3d8feff;
+  color: #79408fff;
 }
