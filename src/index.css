@@ -1,13 +1,89 @@
-body {
+html, body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background: rgb(255,228,66);
+  background: linear-gradient(180deg, rgba(255,228,66,1) 0%, rgba(244,152,109,1) 22%, rgba(214,86,196,1) 45%, rgba(0,0,0,1) 45%, rgba(152,118,224,1) 47%, rgb(99, 153, 235) 55%, rgba(0,0,0,1) 55%, rgba(108,160,227,1) 57%, rgba(104,221,205,1) 65%, rgba(0,0,0,1) 65%, rgba(99,188,215,1) 67%, rgba(94,44,167,1) 100%);
+  background-repeat: no-repeat;
+  height: 100%;
+  font-family: Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/*navigation*/
+header {
+  display: flex;
+  justify-content: center;
+  
+}
+
+header #navContainer {
+  width: 70%;
+  background-color: #fff9f3ff;
+  margin: 1rem;
+}
+
+header h1 {
+  font-size: 100%;
+  background-color: #79408fff;
+  color: #e3d8feff;
+  padding: 0.5rem;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+header nav a {
+  background-color: #e3d8feff;
+  color: #79408fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+
+
+}
+
+header nav a:active { 
+  color: black;
+}
+
+.box {
+  border-top: 3px solid #ffffff;
+  border-right: 3px solid #d5d5d5;
+  border-bottom: 3px solid #d5d5d5;
+  border-left: 3px solid #ffffff;
+
+  -webkit-box-shadow: 1px 1px 0px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 1px 0px 1px rgba(0,0,0,0.75);
+  box-shadow: 0.5px 0.5px 0px 1px rgba(0,0,0,0.75);
+}
+
+.boxHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boxButtons {
+  display: flex;
+  margin: 0.5rem;
+}
+
+.boxButtons .box{
+  width: 1rem;
+  height: 1rem;
+  text-align: center;
+  margin: 0 0.3rem;
+  font-size: 80%;
+}
+
+#navContainer .boxHeader {
+  background-color: #79408fff;
+}
+
+#navContainer .boxButtons .box{
+  background-color: #fff9f3ff;
+ 
 }
