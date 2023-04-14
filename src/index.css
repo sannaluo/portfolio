@@ -68,6 +68,36 @@ main {
   cursor: pointer;
 }
 
+.handle {
+  cursor: move;
+}
+
+/*front page*/
+
+.IconImg {
+  width: 5rem;
+}
+
+#profileImg {
+  border-radius: 50%;
+}
+
+#iconsContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  z-index: 2;
+}
+
+#iconsContainer a {
+  text-align: center;
+  width: 5rem;
+  padding: 1rem 0;
+  color: #fff9f3ff;
+}
+
+
+
 
 /*navigation*/
 header {
@@ -130,6 +160,7 @@ header nav a:active {
   background-color: #e3d8feff;
   display: flex;
   flex-direction: column;
+  margin: 1rem;
 }
 
 
