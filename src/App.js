@@ -30,12 +30,24 @@ function App() {
           </div>
         </header>
         <main>
+          <div>
+            <div>
+              <img src="./images/profile-img.jpeg"/>
+            </div>
+            <div>
+              <img src='../images/In-Blue-128@2x.png'/>
+            </div>
+            <div>
+              <img src='src\images\github-mark.png'/>
+            </div>
+          </div>
           <Routes>
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path='/skills' element={<Skills />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <div id="backgroundCircle"></div>
         </main>
       </BrowserRouter>
     </div>
