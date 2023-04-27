@@ -7,6 +7,7 @@ import About from './content/About';
 import NotFound from "./content/NotFound";
 import Projects from "./content/Projects";
 import Skills from './content/Skills';
+import Interests from './content/Interests';
 
 import profilePicture from './images/profile-img.jpeg';
 import linkedinLogo from './images/In-Blue-128@2x.png';
@@ -28,9 +29,14 @@ function App() {
                 </div>
               </div>
               <nav>
-                <Link to="/about" className='box'>About</Link>{' '}
-                <Link to="/projects" className='box'>Projects</Link>{' '}
-                <Link to="/skills" className='box'>Skills</Link>{''}
+                <div className='navDivider'>
+                  <Link to="/about" className='box'>About</Link>{' '}
+                  <Link to="/skills" className='box'>Skills</Link>{' '}
+                </div>
+                <div className='navDivider'>
+                  <Link to="/interests" className='box'>Interests</Link>{' '}
+                  <Link to="/projects" className='box'>Projects</Link>{' '}
+                </div>
               </nav>
             </div>
           </Draggable>
@@ -52,8 +58,9 @@ function App() {
           </div>
           <Routes>
             <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
             <Route path='/skills' element={<Skills />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path='/interests' element={<Interests />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <div id="backgroundCircle"></div>

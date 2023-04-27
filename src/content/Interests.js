@@ -2,22 +2,13 @@ import React from "react";
 import Draggable from "react-draggable";
 
 
-const learnMore = (e) => {
-    e.preventDefault();
-
-    // lisää sisältöä tai vaihtuminen kun painetaan
-}
-
-
-
-function About() {
+function Interests() {
     return (
-        
-            <div id="aboutContainer" className="boxContainer">
+            <div id="interestsContainer" className="boxContainer">
                 <Draggable handle=".handle" bounds="body">
-                    <div className="box boxContent" id="aboutBox">
+                    <div className="box boxContent" id="interestsBox">
                         <div className='boxHeader handle'>
-                            <h2>About me</h2>
+                            <h2>Hobbies</h2>
                             <div className='boxButtons'>
                                 <div className='box'>_</div>
                                 <div className='box'>□</div>
@@ -28,7 +19,7 @@ function About() {
                             Asperiores vitae totam architecto nobis inventore ullam maxime error,
                             repellat dignissimos minus debitis illum magni voluptatibus dolores.
                             Ducimus eius suscipit velit officiis!</p>
-                        <button className="box cornerRightButton" onClick={(e)=>{learnMore(e)}}>Learn more</button>
+                            
                     </div>
                 </Draggable>
             </div>
@@ -36,4 +27,4 @@ function About() {
     );
 }
 
-export default About;
+export default Interests;

@@ -1,3 +1,12 @@
+/*
+colors:
+light cream #fff9f3ff
+light lilac #e3d8feff
+dark lilac #79408fff
+black
+*/
+
+
 html, body {
   margin: 0;
   padding: 0;
@@ -13,11 +22,13 @@ html, body {
 
 main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 #backgroundCircle {
-  width: 40rem;
+  width: 100%;
+  max-width: 40rem;
   height: 20rem;
   background-color: black;
   border-radius: 20rem 20rem 0 0;
@@ -46,6 +57,9 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  background-color: #79408fff;
+  color: #e3d8feff;
 }
 
 .boxButtons {
@@ -72,10 +86,46 @@ main {
   cursor: move;
 }
 
+.boxContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+.boxContainer h2 {
+  font-size: 100%;
+  color: #e3d8feff;
+  padding: 0.5rem;
+  margin: 0;
+}
+
+.boxContent {
+  background-color: #e3d8feff;
+  background-color: #e3d8feff;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.boxContent p {
+  margin: 1rem;
+}
+
+.boxContainer .boxHeader .boxButtons .box {
+  background-color: #fff9f3ff;
+  color: #79408fff;
+}
+
+.boxContent .cornerRightButton {
+  background-color: #e3d8feff;
+  color: #79408fff;
+}
+
 /*front page*/
 
 .IconImg {
-  width: 5rem;
+  width: 4rem;
 }
 
 #profileImg {
@@ -84,8 +134,8 @@ main {
 
 #iconsContainer {
   display: flex;
-  flex-direction: column;
-  margin: 2rem;
+  justify-content: space-evenly;
+  
   z-index: 2;
 }
 
@@ -107,7 +157,7 @@ header {
 }
 
 header #navContainer {
-  width: 70%;
+  width: 100%;
   background-color: #fff9f3ff;
   margin: 1rem;
 }
@@ -122,13 +172,25 @@ header h1 {
 header nav {
   display: flex;
   justify-content: space-around;
-  padding: 1rem;
+  flex-wrap: wrap;
+  
+}
+
+header .navDivider {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 header nav a {
+  width: 5rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+
   background-color: #e3d8feff;
   color: #79408fff;
-  padding: 1rem 2rem;
+  
   text-decoration: none;
 }
 
@@ -136,57 +198,41 @@ header nav a:active {
   color: black;
 }
 
-#navContainer .boxHeader {
-  background-color: #79408fff;
-}
 
 #navContainer .boxButtons .box{
   background-color: #fff9f3ff;
- 
+  color: #79408fff;
 }
 
 /* about */
 
-#aboutContainer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  z-index: 2;
-}
+/* for desktop */
+@media only screen and (min-width: 768px) {
 
-#aboutBox {
-  width: 60%;
-  background-color: #e3d8feff;
-  background-color: #e3d8feff;
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
-}
+  header #navContainer {
+    width: 70%;
+  }
 
+  header .navDivider {
+    width: 50%;
+  }
 
-#aboutContainer h2 {
-  font-size: 100%;
-  color: #e3d8feff;
-  padding: 0.5rem;
-  margin: 0;
-}
+  header nav {
+    padding: 1rem;
+  }
 
-#aboutContainer .boxHeader {
-  background-color: #79408fff;
-  color: #e3d8feff;
+  main {
+    flex-direction: row;
+  }
 
-}
+  #iconsContainer {
+    flex-direction: column; 
+    position: fixed;
+    left: 0;
+    margin: 2rem;
+  }
 
-#aboutContainer .boxHeader .boxButtons .box {
-  background-color: #fff9f3ff;
-  color: #79408fff;
-}
-
-#aboutContainer #aboutBox p {
-  margin: 1rem;
-}
-
-#aboutBox .cornerRightButton {
-  background-color: #e3d8feff;
-  color: #79408fff;
+  .boxContent {
+     width: 60%;
+  }
 }
