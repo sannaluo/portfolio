@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
 import Draggable from 'react-draggable';
+import { changeVisibility } from './content/Visibility';
 
 import About from './content/About';
 import NotFound from "./content/NotFound";
@@ -12,6 +13,7 @@ import Interests from './content/Interests';
 import profilePicture from './images/profile-img.jpeg';
 import linkedinLogo from './images/In-Blue-128@2x.png';
 import githubLogo from './images/github-mark.png';
+import emailIcon from './images/email.png';
 
 function App() {
   return (
@@ -23,12 +25,12 @@ function App() {
               <div className='boxHeader handle'>
                 <h1>Sanna Luostarinen</h1>
                 <div className='boxButtons'>
-                  <div className='box'>_</div>
-                  <div className='box'>□</div>
-                  <div className='box'>x</div>
+                    <button className='box' onClick={(e)=>{changeVisibility(e, 'nav', 'h')}}>_</button>
+                    <button className='box' onClick={(e)=> {changeVisibility(e, 'nav')}}>□</button>
+                    <button className='box'>x</button>
                 </div>
               </div>
-              <nav>
+              <nav id='nav'>
                 <div className='navDivider'>
                   <Link to="/about" className='box'>About</Link>{' '}
                   <Link to="/skills" className='box'>Skills</Link>{' '}
@@ -54,6 +56,10 @@ function App() {
             <a href='https://github.com/sannaluo/'>
               <img src={githubLogo} alt="GitHub logo" className='IconImg' id='githubImg'/>
               GitHub
+            </a>
+            <a href='mailto: smo.luostarinen@gmail.com'>
+              <img src={emailIcon} alt='icon for email' className='IconImg' id='emailImg' />
+              Email me
             </a>
           </div>
           <Routes>

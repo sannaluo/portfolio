@@ -6,19 +6,27 @@ dark lilac #79408fff
 black
 */
 
+html {
+  background: rgb(255,231,0);
+  background: linear-gradient(180deg, rgba(255,231,0,1) 0%,  rgba(255,110,38,1) 50%,  rgba(255,63,38,1) 60%,  rgba(255,38,144,1) 70%, rgba(201,38,255,1) 80%,  rgba(38,199,255,1) 100%); 
+  background-repeat: no-repeat;
+  height: auto;
+  min-height: 100%;
+}
 
 html, body {
   margin: 0;
   padding: 0;
-  background: rgb(255,231,0);
-  background: linear-gradient(180deg, rgba(255,231,0,1) 0%,  rgba(255,110,38,1) 50%,  rgba(255,63,38,1) 60%,  rgba(255,38,144,1) 70%, rgba(201,38,255,1) 80%,  rgba(38,199,255,1) 100%); 
-  background-repeat: no-repeat;
-  height: 100%;
+
   width: 100%;
   font-family: Arial, sans-serif;
   overflow-x: clip;
 }
 
+body {
+
+  height: 100%;
+}
 
 main {
   display: flex;
@@ -35,7 +43,7 @@ main {
 
   background: rgb(255,231,0);
   background: linear-gradient(180deg, rgba(255,231,0,1) 0%, rgba(255,110,38,1) 40%, rgba(255,110,38,0) 40%, rgba(255,110,38,0) 50%, rgba(255,110,38,1) 50%, rgba(255,63,38,1) 55%, rgba(255,63,38,1) 60%, rgba(255,63,38,0) 60%, rgba(255,63,38,0) 65%, rgba(255,63,38,1) 65%, rgba(255,38,144,1) 70%, rgba(255,38,144,1) 75%, rgba(255,38,144,0) 75%, rgba(255,38,144,0) 80%, rgba(255,38,144,1) 80%, rgba(201,38,255,1) 85%, rgba(201,38,255,1) 90%, rgba(201,38,255,0) 90%, rgba(201,38,255,0) 93%, rgba(201,38,255,1) 93%, rgba(38,199,255,1) 98%, rgba(38,61,255,0) 98%);
-  position: absolute;
+  position: fixed;
   bottom: 0;
   z-index: 0;
 
@@ -68,11 +76,12 @@ main {
 }
 
 .boxButtons .box{
-  width: 1rem;
-  height: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
   text-align: center;
   margin: 0 0.3rem;
-  font-size: 80%;
+  padding: 0;
+  font-size: 100%;
   cursor: pointer;
 }
 
@@ -131,6 +140,22 @@ main {
 .multipleBoxesContainer {
   display: flex;
   flex-direction: column;
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.visible {
+  visibility: visible;
+  height: auto;
+}
+.hidden {
+  visibility: hidden;
+  height: 0;
+  padding: 0;
+  margin: 0;
 }
 
 /*front page*/
@@ -216,6 +241,15 @@ header nav a:active {
 }
 
 /* about */
+
+/*skills*/
+
+#skillsContainer li {
+  padding: 0.5rem;
+}
+#skillsContainer li::marker {
+  content: "‣";
+}
 
 /* for desktop */
 @media only screen and (min-width: 768px) {
