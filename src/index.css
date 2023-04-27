@@ -108,8 +108,12 @@ main {
   margin: 1rem;
 }
 
-.boxContent p {
+.boxContent p, .boxContent ul {
   margin: 1rem;
+}
+
+.boxContent a {
+  text-decoration: none;
 }
 
 .boxContainer .boxHeader .boxButtons .box {
@@ -120,6 +124,13 @@ main {
 .boxContent .cornerRightButton {
   background-color: #e3d8feff;
   color: #79408fff;
+  font-size: 80%;
+  padding: 0.2rem;
+}
+
+.multipleBoxesContainer {
+  display: flex;
+  flex-direction: column;
 }
 
 /*front page*/
