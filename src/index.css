@@ -7,14 +7,15 @@ black
 */
 
 html {
-  background: rgb(255,231,0);
-  background: linear-gradient(180deg, rgba(255,231,0,1) 0%,  rgba(255,110,38,1) 50%,  rgba(255,63,38,1) 60%,  rgba(255,38,144,1) 70%, rgba(201,38,255,1) 80%,  rgba(38,199,255,1) 100%); 
+  background: rgb(255, 231, 0);
+  background: linear-gradient(180deg, rgba(255, 231, 0, 1) 0%, rgba(255, 110, 38, 1) 50%, rgba(255, 63, 38, 1) 60%, rgba(255, 38, 144, 1) 70%, rgba(201, 38, 255, 1) 80%, rgba(38, 199, 255, 1) 100%);
   background-repeat: no-repeat;
   height: auto;
   min-height: 100%;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 
@@ -41,8 +42,8 @@ main {
   background-color: black;
   border-radius: 20rem 20rem 0 0;
 
-  background: rgb(255,231,0);
-  background: linear-gradient(180deg, rgba(255,231,0,1) 0%, rgba(255,110,38,1) 40%, rgba(255,110,38,0) 40%, rgba(255,110,38,0) 50%, rgba(255,110,38,1) 50%, rgba(255,63,38,1) 55%, rgba(255,63,38,1) 60%, rgba(255,63,38,0) 60%, rgba(255,63,38,0) 65%, rgba(255,63,38,1) 65%, rgba(255,38,144,1) 70%, rgba(255,38,144,1) 75%, rgba(255,38,144,0) 75%, rgba(255,38,144,0) 80%, rgba(255,38,144,1) 80%, rgba(201,38,255,1) 85%, rgba(201,38,255,1) 90%, rgba(201,38,255,0) 90%, rgba(201,38,255,0) 93%, rgba(201,38,255,1) 93%, rgba(38,199,255,1) 98%, rgba(38,61,255,0) 98%);
+  background: rgb(255, 231, 0);
+  background: linear-gradient(180deg, rgba(255, 231, 0, 1) 0%, rgba(255, 110, 38, 1) 40%, rgba(255, 110, 38, 0) 40%, rgba(255, 110, 38, 0) 50%, rgba(255, 110, 38, 1) 50%, rgba(255, 63, 38, 1) 55%, rgba(255, 63, 38, 1) 60%, rgba(255, 63, 38, 0) 60%, rgba(255, 63, 38, 0) 65%, rgba(255, 63, 38, 1) 65%, rgba(255, 38, 144, 1) 70%, rgba(255, 38, 144, 1) 75%, rgba(255, 38, 144, 0) 75%, rgba(255, 38, 144, 0) 80%, rgba(255, 38, 144, 1) 80%, rgba(201, 38, 255, 1) 85%, rgba(201, 38, 255, 1) 90%, rgba(201, 38, 255, 0) 90%, rgba(201, 38, 255, 0) 93%, rgba(201, 38, 255, 1) 93%, rgba(38, 199, 255, 1) 98%, rgba(38, 61, 255, 0) 98%);
   position: fixed;
   bottom: 0;
   z-index: 0;
@@ -56,9 +57,9 @@ main {
   border-bottom: 3px solid #d5d5d5;
   border-left: 3px solid #ffffff;
 
-  -webkit-box-shadow: 1px 1px 0px 1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 1px 1px 0px 1px rgba(0,0,0,0.75);
-  box-shadow: 0.5px 0.5px 0px 1px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0.5px 0.5px 0px 1px rgba(0, 0, 0, 0.75);
 }
 
 .boxHeader {
@@ -75,7 +76,7 @@ main {
   margin: 0.5rem;
 }
 
-.boxButtons .box{
+.boxButtons .box {
   width: 1.5rem;
   height: 1.5rem;
   text-align: center;
@@ -117,7 +118,8 @@ main {
   margin: 1rem;
 }
 
-.boxContent p, .boxContent ul {
+.boxContent p,
+.boxContent ul {
   margin: 1rem;
 }
 
@@ -147,10 +149,16 @@ main {
   flex-direction: column;
 }
 
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
 .visible {
   visibility: visible;
   height: auto;
 }
+
 .hidden {
   visibility: hidden;
   height: 0;
@@ -171,8 +179,8 @@ main {
 #iconsContainer {
   display: flex;
   justify-content: space-evenly;
-  
-  z-index: 2;
+
+  z-index: 3;
 }
 
 #iconsContainer a {
@@ -189,7 +197,7 @@ main {
 header {
   display: flex;
   justify-content: center;
-  
+
 }
 
 header #navContainer {
@@ -209,7 +217,7 @@ header nav {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  
+
 }
 
 header .navDivider {
@@ -226,16 +234,16 @@ header nav a {
 
   background-color: #e3d8feff;
   color: #79408fff;
-  
+
   text-decoration: none;
 }
 
-header nav a:active { 
+header nav a:active {
   color: black;
 }
 
 
-#navContainer .boxButtons .box{
+#navContainer .boxButtons .box {
   background-color: #fff9f3ff;
   color: #79408fff;
 }
@@ -247,8 +255,39 @@ header nav a:active {
 #skillsContainer li {
   padding: 0.5rem;
 }
+
 #skillsContainer li::marker {
   content: "‣";
+}
+
+/*projects*/
+
+#projectsContainer .projectWrapper {
+  justify-content: space-around;
+
+}
+
+#projectsContainer .projectWrapper .flexCol {
+  text-align: center;
+  align-items: center;
+}
+
+#projectsContainer .projectWrapper .flexCol a {
+  margin: 1rem;
+}
+
+#projectsContainer .projectWrapper .flexCol .cornerRightButton {
+  align-self: auto;
+}
+
+#projectsContainer .exampleImg {
+  width: 90%;
+  border: 3px solid white;
+}
+
+.tryButton {
+  padding: 0.5rem;
+  background-color: #fff9f3ff;
 }
 
 /* for desktop */
@@ -271,13 +310,13 @@ header nav a:active {
   }
 
   #iconsContainer {
-    flex-direction: column; 
+    flex-direction: column;
     position: fixed;
     left: 0;
     margin: 2rem;
   }
 
   .boxContent {
-     width: 60%;
+    width: 60%;
   }
 }

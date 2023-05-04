@@ -2,15 +2,6 @@ import React from "react";
 import Draggable from "react-draggable";
 import {changeVisibility} from "./Visibility";
 
-
-const learnMore = (e) => {
-    e.preventDefault();
-
-    // lisää sisältöä tai vaihtuminen kun painetaan
-}
-
-
-
 function About() {
     return (
         
@@ -27,9 +18,9 @@ function About() {
                         </div>
                         <div id="a1" className="flexCol">
                             <p>Hi! I’m Sanna. I’m  a frontend developer.
-                                I enjoy solving logical problems with my engineer brain and I also like visually nice looking things. Other than coding in web development, I’m interested in UX design, mixed reality and accessibility. I like planning and documenting my work: you can find the documentation to my portfolio site below. Explore the page and learn more about me and my competences!
+                                I enjoy solving logical problems with my engineer brain and I also like visually nice looking things. Other than coding in web development, I’m interested in service design, UX design, mixed reality and accessibility. I like planning and documenting my work: you can find the documentation to my portfolio site below. Explore the page and learn more about me and my competences!
                             </p>
-                            <button className="box cornerRightButton" onClick={(e)=>{learnMore(e)}}>Site docs</button>
+                            <a className="box cornerRightButton" href="https://github.com/sannaluo/portfolio" target="_blank">Site docs</a>
                         </div>
                     </div>
                 </Draggable>

@@ -45,15 +45,15 @@ function App() {
         </header>
         <main>
           <div id='iconsContainer'>
-            <a href={profilePicture}>
+            <a href={profilePicture}  target='_blank'>
               <img src={profilePicture} alt='profile image' className='IconImg' id='profileImg'/>
               Sanna.jpeg
             </a>
-            <a href='https://www.linkedin.com/in/sannaluo/'>
+            <a href='https://www.linkedin.com/in/sannaluo/' target='_blank'>
               <img src={linkedinLogo} alt='LinkedIn logo' className='IconImg' id='linkedinImg'/>
               LinkedIn
             </a>
-            <a href='https://github.com/sannaluo/'>
+            <a href='https://github.com/sannaluo/' target='_blank'>
               <img src={githubLogo} alt="GitHub logo" className='IconImg' id='githubImg'/>
               GitHub
             </a>
