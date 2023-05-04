@@ -1,0 +1,46 @@
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+    <!-- Import the component -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<!-- Use it like any other HTML element -->
+<model-viewer id="model-viewer" src="./models/lamppu.glb" ar ar-modes="webxr scene-viewer quick-look" alt="A 3D model of a lamp" auto-rotate camera-controls skybox-image="./assets/spruit_sunrise_2k.hdr">
+
+    <button class="Hotspot" id="hotspot-lamppu" slot="hotspot-1" data-position="0.026788354960363723m 0.34106916047555913m 0.08457384759504406m" data-normal="0.24688703636302886m 0.5522241423827103m 0.7963010032930767m">
+        <div class="HotspotAnnotation" id="hotspottext">View the image used as texture</div>
+    </button>
+
+    <button class="Hotspot" id="hotspot-kehykset" hidden slot="hotspot-2" data-position="0.042500634552377216m 0.06683740015452484m 0.014000041298520727m" data-normal="0m 0.342019972686615m 0.9396926828934272m">
+        <div class="HotspotAnnotation" id="hotspottext2">View the image used as texture</div>
+    </button>
+    <button class="Hotspot" id="hotspot-hyllykko" hidden slot="hotspot-3" data-position="-0.126412759165679m 1.871557558057869m -0.15281485731955957m" data-normal="0.9999999999999911m 0m -1.3435883843274954e-7m" >
+        <div class="HotspotAnnotation" id="hotspottext3">View the image used as texture</div>
+    </button>
+    <button class="Hotspot" id="hotspot-vase" hidden slot="hotspot-4" data-position="0.007787855019800408m 0.16245965443304158m 0.060480670272854364m" data-normal="0.13354329161995984m 0.13916197343479939m 0.9812237942554383m" >
+        <div class="HotspotAnnotation" id="hotspottext4">View the image used as texture</div>
+    </button>
+
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="ar_hand_prompt.png">
+    </div>
+
+    <div id="buttonholder">
+        <button id="lamp-btn" class="model-btn">Lamp</button>
+        <button id="frame-btn" class="model-btn">Picture frame</button>
+        <button id="bookshelf-btn" class="model-btn">Bookshelf</button>
+        <button id="vase-btn" class="model-btn">Vase</button>
+    </div>
+</model-viewer>
+
+
+
+<script src="main.js"></script>
+</body>
+
