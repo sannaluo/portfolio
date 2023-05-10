@@ -6,7 +6,7 @@ function About() {
     return (
         
             <div id="aboutContainer" className="boxContainer">
-                <Draggable handle=".handle" bounds="body">
+                <Draggable handle=".handle" bounds="body" cancel=".boxButtons">
                     <div className="box boxContent" id="aboutBox">
                         <div className='boxHeader handle'>
                             <h2>About me</h2>

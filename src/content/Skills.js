@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import Draggable from "react-draggable";
-import cvPdf from '../downloadables/cv.pdf';
+import cvPdf from '../downloadables/cv-sanna-luostarinen-2023.pdf'
 import { changeVisibility } from "./Visibility";
 
 
@@ -11,7 +11,7 @@ function Skills() {
     return(
         <div className="multipleBoxesContainer" id="skillsContainer">  
             <div className="boxContainer">
-                <Draggable handle=".handle" bounds="body">
+                <Draggable handle=".handle" bounds="body" cancel=".boxButtons">
                     <div className="box boxContent">
                         <div className='boxHeader handle'>
                             <h2>Technologies</h2>
@@ -63,7 +63,7 @@ function Skills() {
                 </Draggable>
             </div>
             <div className="boxContainer">
-                <Draggable handle=".handle" bounds="body">
+                <Draggable handle=".handle" bounds="body" cancel=".boxButtons">
                     <div className="box boxContent">
                         <div className='boxHeader handle'>
                             <h2>Software</h2>

@@ -25,8 +25,7 @@ body {
 }
 
 body {
-
-  height: 100%;
+  min-height: 100vh;
 }
 
 main {
@@ -74,6 +73,7 @@ main {
 .boxButtons {
   display: flex;
   margin: 0.5rem;
+  z-index: 3;
 }
 
 .boxButtons .box {
@@ -116,6 +116,7 @@ main {
   display: flex;
   flex-direction: column;
   margin: 1rem;
+  width: 100%;
 }
 
 .boxContent p,
@@ -142,6 +143,7 @@ main {
 .multipleBoxesContainer {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .flexCol {
@@ -157,6 +159,7 @@ main {
 .visible {
   visibility: visible;
   height: auto;
+  display: flex;
 }
 
 .hidden {
@@ -164,6 +167,7 @@ main {
   height: 0;
   padding: 0;
   margin: 0;
+  display: none;
 }
 
 /*front page*/
@@ -174,6 +178,10 @@ main {
 
 #profileImg {
   border-radius: 50%;
+  border: 2px solid white;
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
 }
 
 #iconsContainer {
@@ -317,6 +325,6 @@ header nav a:active {
   }
 
   .boxContent {
-    width: 60%;
+    width: 50%;
   }
 }

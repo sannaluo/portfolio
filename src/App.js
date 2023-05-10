@@ -10,7 +10,7 @@ import Projects from "./content/Projects";
 import Skills from './content/Skills';
 import Interests from './content/Interests';
 
-import profilePicture from './images/profile-img.jpeg';
+import profilePicture from './images/profiilikuva.png';
 import linkedinLogo from './images/In-Blue-128@2x.png';
 import githubLogo from './images/github-mark.png';
 import emailIcon from './images/email.png';
@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <header>
-          <Draggable handle=".handle" bounds="body">
+          <Draggable handle=".handle" bounds="body" cancel=".boxButtons">
             <div id='navContainer' className='box'>
               <div className='boxHeader handle'>
                 <h1>Sanna Luostarinen</h1>
@@ -45,9 +45,9 @@ function App() {
         </header>
         <main>
           <div id='iconsContainer'>
-            <a href={profilePicture}  target='_blank'>
+            <a href='https://www.youtube.com/watch?v=DccaaLvE1D0'  target='_blank'>
               <img src={profilePicture} alt='profile image' className='IconImg' id='profileImg'/>
-              Sanna.jpeg
+              Video CV
             </a>
             <a href='https://www.linkedin.com/in/sannaluo/' target='_blank'>
               <img src={linkedinLogo} alt='LinkedIn logo' className='IconImg' id='linkedinImg'/>

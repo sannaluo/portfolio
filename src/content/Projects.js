@@ -13,7 +13,7 @@ function Projects() {
     return (
         <div className="multipleBoxesContainer" id="projectsContainer">
             <div className="boxContainer">
-                <Draggable handle=".handle" bounds="body">
+                <Draggable handle=".handle" bounds="body" cancel=".boxButtons">
                     <div className="box boxContent" >
                         <div className='boxHeader handle'>
                             <h2>3D projects with Blender and Three.js</h2>
@@ -41,7 +41,7 @@ function Projects() {
                 </Draggable>
             </div>
             <div className="boxContainer">
-                <Draggable handle=".handle" bounds="body">
+                <Draggable handle=".handle" bounds="body" cancel=".boxButtons">
                     <div className="box boxContent" id="interestsBox">
                         <div className='boxHeader handle'>
                             <h2>Simple Unity games</h2>

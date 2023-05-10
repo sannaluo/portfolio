@@ -7,7 +7,7 @@ function Interests() {
     return (
         <div className="multipleBoxesContainer"> 
             <div  className="boxContainer">
-                <Draggable handle=".handle" bounds="body">
+                <Draggable handle=".handle" bounds="body" cancel=".boxButtons">
                     <div className="box boxContent" id="interestsBox">
                         <div className='boxHeader handle'>
                             <h2>Hobbies and interests</h2>
@@ -33,7 +33,7 @@ function Interests() {
                 </Draggable>
             </div>
             <div  className="boxContainer">
-                <Draggable handle=".handle" bounds="body">
+                <Draggable handle=".handle" bounds="body" cancel=".boxButtons">
                     <div className="box boxContent" id="interestsBox">
                         <div className='boxHeader handle'>
                             <h2>Experiences / volunteer work</h2>
